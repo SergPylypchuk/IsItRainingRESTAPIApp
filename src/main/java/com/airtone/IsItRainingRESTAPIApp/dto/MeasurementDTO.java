@@ -45,6 +45,4 @@ public class MeasurementDTO {
     public void setSensor(Sensor sensor) {
         this.sensor = sensor;
     }
-
-
 }

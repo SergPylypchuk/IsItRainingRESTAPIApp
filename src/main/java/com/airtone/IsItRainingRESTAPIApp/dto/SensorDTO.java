@@ -1,5 +1,7 @@
 package com.airtone.IsItRainingRESTAPIApp.dto;
 
+import org.springframework.stereotype.Component;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 

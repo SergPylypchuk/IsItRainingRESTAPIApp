@@ -1,8 +1,10 @@
 package com.airtone.IsItRainingRESTAPIApp.models;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
+@Component
 @Entity
 @Table(name = "Measurement")
 public class Measurement {

@@ -1,4 +1,4 @@
-package com.airtone.IsItRainingRESTAPIApp.services;
+package com.airtone.IsItRainingRESTAPIApp.util.services;
 
 import com.airtone.IsItRainingRESTAPIApp.dto.SensorDTO;
 import com.airtone.IsItRainingRESTAPIApp.models.Sensor;
@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -34,6 +35,10 @@ public class SensorService {
     public Sensor findSensorByName(String name) {
         Optional<Sensor> foundSensor = sensorRepository.findByName(name);
         return foundSensor.orElseThrow(SensorNotFoundException::new);
+    }
+
+    public List<Sensor> findAll() {
+        return sensorRepository.findAll();
     }
 
     @Transactional

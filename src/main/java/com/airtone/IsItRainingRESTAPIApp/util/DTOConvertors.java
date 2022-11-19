@@ -20,8 +20,10 @@ public class DTOConvertors {
 
 
 
-    public SensorDTO convertToSensorDTO(Sensor sensor) {
-        return modelMapper.map(sensor, SensorDTO.class);
+    public Map<String, String> convertToSensorDTO(Sensor sensor) {
+        Map<String, String> sensorMap = new HashMap<>();
+        sensorMap.put("name", sensor.getName());
+        return sensorMap;
     }
 
 
