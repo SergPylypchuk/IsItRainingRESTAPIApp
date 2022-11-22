@@ -1,4 +1,4 @@
-package com.airtone.IsItRainingRESTAPIApp.util.services;
+package com.airtone.IsItRainingRESTAPIApp.services;
 
 import com.airtone.IsItRainingRESTAPIApp.dto.SensorDTO;
 import com.airtone.IsItRainingRESTAPIApp.models.Sensor;

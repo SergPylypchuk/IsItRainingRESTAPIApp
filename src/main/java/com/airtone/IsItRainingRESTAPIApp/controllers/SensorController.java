@@ -2,7 +2,7 @@ package com.airtone.IsItRainingRESTAPIApp.controllers;
 
 import com.airtone.IsItRainingRESTAPIApp.dto.SensorBatchDTO;
 import com.airtone.IsItRainingRESTAPIApp.dto.SensorDTO;
-import com.airtone.IsItRainingRESTAPIApp.util.services.SensorService;
+import com.airtone.IsItRainingRESTAPIApp.services.SensorService;
 import com.airtone.IsItRainingRESTAPIApp.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;

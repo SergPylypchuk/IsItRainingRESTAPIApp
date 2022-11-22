@@ -1,6 +1,6 @@
 package com.airtone.IsItRainingRESTAPIApp.util;
 
-import com.airtone.IsItRainingRESTAPIApp.util.services.SensorService;
+import com.airtone.IsItRainingRESTAPIApp.services.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
