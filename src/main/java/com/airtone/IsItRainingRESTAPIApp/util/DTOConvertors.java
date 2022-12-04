@@ -18,14 +18,11 @@ public class DTOConvertors {
         this.modelMapper = modelMapper;
     }
 
-
-
     public Map<String, String> convertToSensorDTO(Sensor sensor) {
         Map<String, String> sensorMap = new HashMap<>();
         sensorMap.put("name", sensor.getName());
         return sensorMap;
     }
-
 
     public Sensor convertToSensor(SensorDTO sensorDTO) {
         return modelMapper.map(sensorDTO, Sensor.class);
@@ -46,8 +43,6 @@ public class DTOConvertors {
         measurement.setValue(Double.parseDouble(measurementDTO.getValue()));
         measurement.setRaining(Boolean.parseBoolean(measurementDTO.getRaining()));
         measurement.setSensor(measurementDTO.getSensor());
-
-
         return measurement;
     }
 }

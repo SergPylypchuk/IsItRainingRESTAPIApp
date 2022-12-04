@@ -24,7 +24,7 @@ public class ErrorChecker {
     }
 
     public void isRegistered(String sensorName) {
-        // Check the Sensor sending its measurement is registered.
+        // Check if the sensor sending this measurement is registered.
         // If not, the measurement will not be saved in db (message: "Unregistered sensor")
         if(!sensorService.isExists(sensorName))
             throw new SensorExistException("Unregistered sensor");
