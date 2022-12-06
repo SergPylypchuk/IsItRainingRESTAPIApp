@@ -1,0 +1,163 @@
+:root {
+    --deep-grey-bg: #2F2F2F;
+    --grey-bg: #3F3F3F;
+    --main-color: lightgray;
+    --main-font-family: Calibri;
+}
+body{
+    background-color: var(--grey-bg);
+}
+.main {
+    width: 43em;
+    margin: 0 auto;
+}
+.menu {
+    float: left;
+    width: 12em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 0;
+    background-color: var(--deep-grey-bg);
+    border-radius: 0.5em;
+}
+.menu p {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.menu input[type=submit] {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 11em;
+}
+.common {
+    float: right;
+    width: 30em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0;
+    background-color: var(--deep-grey-bg);
+    border-radius: 0.5em;
+}
+.content {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 4%;
+    font-family: var(--main-font-family);
+    font-weight: lighter;
+    text-align: center;
+    color: var(--main-color);
+}
+div {
+    font-family: var(--main-font-family);
+}
+
+p, label, th, td {
+    font-family: var(--main-font-family);
+    margin: 5% 1% 0 0;
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--main-color);
+}
+
+pre code {
+    font-family: var(--main-font-family);
+    /*margin: 1em 0 0 0;*/
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 2;
+    color: var(--main-color);
+
+}
+.code {
+    background-color: var(--grey-bg);
+    padding: 0.1em 1em;
+    border-radius: 0.5em;
+    text-align: left;
+}
+
+.incode {
+    text-align: left;
+}
+
+.howto {
+    text-align: left;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+th {
+    text-decoration-line: underline;
+}
+
+.p_left {
+    font-family: var(--main-font-family);
+    margin: 9% 3% 0 0;
+    font-size: 1em;
+    font-weight: lighter;
+    color: var(--main-color);
+    text-align: left;
+}
+.iir {
+    margin-bottom: 1%;
+}
+
+.rd {
+    padding: 4% 0;
+    font-family: var(--main-font-family);
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    color: var(--main-color);
+
+}
+
+input[type=text] {
+    margin: 2% 0;
+    width: 13.5em;
+    height: 1.5em;
+    background-color: var(--main-color);
+    color: var(--grey-bg);
+    border-radius: 0.5em;
+}
+input[type=submit] {
+    width: 10em;
+    height: 3em;
+    background-color: var(--main-color);
+    color: var(--grey-bg);
+    margin: 7% auto;
+    border-radius: 0.5em;
+}
+
+hr {
+    width: 5em;
+    border-color: var(--grey-bg);
+}
+
+select {
+    margin-top: 2%;
+    width: 10em;
+    height: 1.5em;
+    background-color: var(--main-color);
+    color: #3F3F3F;
+    border-radius: 0.5em;
+}
+
+input[type=radio] {
+    accent-color: var(--grey-bg);
+    color: var(--grey-bg);
+}
+
+.sbmt {
+    margin-top: 5%;
+    display:flex;
+    justify-content: center;
+}
+
+.error-message {
+    color: darkgoldenrod;
+}

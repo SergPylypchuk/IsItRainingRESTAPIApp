@@ -31,17 +31,8 @@ public class SensorController {
         this.dtoConvertors = dtoConvertors;
     }
 
-@PostMapping("/registration")
-public ResponseEntity<HttpStatus> regSensor(@RequestBody @Valid SensorDTO sensorDTO, BindingResult bindingResult) {
 
-    errorChecker.doubleNameChecker(sensorDTO.getName());
-    errorChecker.fieldsChecker(bindingResult);
-    sensorService.save(sensorDTO);
-
-    return ResponseEntity.ok(HttpStatus.OK);
-}
-
-    @PostMapping("/registrationBatch")
+    @PostMapping("/registration")
     public ResponseEntity<HttpStatus> regBatchSensor(@RequestBody @Valid SensorBatchDTO sensorBatchDTO, BindingResult bindingResult) {
 
         for(SensorDTO sensor : sensorBatchDTO.getSensor()) {

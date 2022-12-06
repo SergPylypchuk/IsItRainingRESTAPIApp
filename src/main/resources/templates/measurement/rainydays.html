@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainy days</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Menu-->
+<div class="main">
+    <div class="menu">
+
+        <hr/>
+        <p>IIR API</p>
+        <hr/>
+
+        <form th:method="GET" th:action="@{/api}" >
+            <div class="sbmt">
+                <input type="submit" value="Home"/>
+            </div>
+        </form>
+
+        <hr/>
+        <p>NEW</p>
+        <hr/>
+
+        <form th:method="GET" th:action="@{/api/sensor/new}" >
+            <div class="sbmt">
+                <input type="submit" value="Sensor"/>
+            </div>
+        </form>
+
+        <form th:method="GET" th:action="@{/api/measurement/new}" >
+            <div class="sbmt">
+                <input type="submit" value="Measurement"/>
+            </div>
+        </form>
+
+        <hr/>
+        <p>SHOW</p>
+        <hr/>
+
+        <form th:method="GET" th:action="@{/api/measurement/show}" >
+            <div class="sbmt">
+                <input type="submit" value="Measurements"/>
+            </div>
+        </form>
+
+        <form th:method="GET" th:action="@{/api/measurement/rainydays}" >
+            <div class="sbmt">
+                <input type="submit" value="Rainy days counter"/>
+            </div>
+        </form>
+
+        <hr/>
+        <p>CLEAR</p>
+        <hr/>
+
+        <form th:method="GET" th:action="@{/api/clear}" >
+            <div class="sbmt">
+                <input type="submit" value="All data"/>
+            </div>
+        </form>
+        <hr/>
+
+    </div>
+
+
+<!--    Content-->
+    <div class="common">
+        <div class="content">
+
+
+            <h1>Show quantity of rainy days:</h1>
+
+            <div class="code"><p class="incode">Method: GET</p>
+            <pre><code>http://localhost:8080/measurements/rainydays</code></pre>
+            </div>
+            <hr/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

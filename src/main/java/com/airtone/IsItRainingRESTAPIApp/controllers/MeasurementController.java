@@ -62,7 +62,7 @@ public HttpEntity<Map<String, List<Map<String, String>>>> findAll() {
 }
 
 
-    @GetMapping("/rainyDaysCount")
+    @GetMapping("/rainydays")
     public String rainyDaysCount() {
         return measurementService.rainyDaysCount();
     }
