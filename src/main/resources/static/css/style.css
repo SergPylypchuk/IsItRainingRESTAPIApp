@@ -65,23 +65,26 @@ p, label, th, td {
 
 pre code {
     font-family: var(--main-font-family);
-    /*margin: 1em 0 0 0;*/
     font-size: 1em;
     font-weight: lighter;
-    text-align: left;
+    text-align: center;
     line-height: 2;
     color: var(--main-color);
 
 }
 .code {
     background-color: var(--grey-bg);
-    padding: 0.1em 1em;
     border-radius: 0.5em;
-    text-align: left;
+    /*text-align: left;*/
+    width: 20em;
+    float: none;
+    margin: 0 auto;
 }
 
 .incode {
-    text-align: left;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .howto {
